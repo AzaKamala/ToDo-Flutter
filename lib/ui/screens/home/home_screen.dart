@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
             if (!value.showDeleteAll) return const SizedBox();
 
             return PopupMenuButton<String>(
+              tooltip: "Options",
               initialValue: "",
               onSelected: (String item) async {
                 if (item == "deleteAll") {
